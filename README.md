@@ -1,68 +1,91 @@
-<<<<<<< HEAD
-# sv
+# 🏠 Hackathon Hostel Allotment System
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A web application built using **SvelteKit** to automate hostel room allocation for hackathon participants.
 
-## Creating a project
+## 🚀 Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- 📂 Upload Hostel Availability Excel file
+- 👨‍🎓 Upload Participants Excel file
+- 🎲 Random hostel room allocation based on gender and room capacity
+- 📋 Display hostel data in a table
+- 📊 Display final hostel allotment table
+- 🔍 Search students by Student ID or Name
+- 📥 Download final allotment as an Excel file
+- 🔄 Reset uploaded data and allocation results
+- 📱 Responsive user interface using Tailwind CSS
 
-```sh
-# create a new project
-npx sv create my-app
-```
+---
 
-To recreate this project with the same configuration:
+## 🛠️ Tech Stack
 
-```sh
-# recreate this project
-npx sv@0.16.3 create --template minimal --no-types --add tailwindcss="plugins:none" prettier eslint --install npm hackathon-hostel-allotment
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-=======
-# Hackathon Hostel Allotment System
-
-## Overview
-This project is being developed as part of the Web Team selection process.
-
-The objective is to build a web application using **SvelteKit** that automates hostel room allocation for hackathon participants.
-
-## Planned Features
-- Upload Hostel Availability Excel file
-- Upload Participants Excel file
-- Automatic room allocation based on gender and room capacity
-- Display allocation results
-- Download the final allotment as an Excel file
-
-## Tech Stack
 - SvelteKit
 - JavaScript
-- XLSX
+- Tailwind CSS
+- XLSX Library
 
-## Project Status
-🚧 Work in Progress
+---
 
-Development is currently in progress. The project will be updated with the implementation and documentation soon.
->>>>>>> f328d4458e21858f85fbc477089fe6c3b27d598f
+## 📂 Input Files
+
+### Hostel Availability
+
+| Hostel Name | Room Number | Capacity | Gender |
+|-------------|------------:|---------:|--------|
+| A | 101 | 4 | Male |
+| A | 102 | 4 | Female |
+
+### Participants
+
+| Student ID | Student Name | Gender |
+|------------|--------------|--------|
+| 25ST10001 | Rahul Kumar | Male |
+
+---
+
+## 📄 Output
+
+The generated Excel file contains:
+
+| Student ID | Student Name | Gender | Hostel | Room Number |
+|------------|--------------|--------|--------|-------------|
+
+---
+
+## ▶️ Installation
+
+```bash
+git clone https://github.com/nitish6759/Hackathon-Hostel-Allotment.git
+
+cd Hackathon-Hostel-Allotment
+
+npm install
+
+npm run dev
+```
+
+---
+
+## 🎯 Future Improvements
+
+- Dashboard statistics
+- Dark mode
+- Pagination
+- Better UI/UX
+- Drag & Drop Excel Upload
+- Hostel allocation summary
+
+---
+
+## 👨‍💻 Author
+
+**Nitish Kumar**
+
+B.Tech CSE, NIT Silchar
+
+GitHub: https://github.com/nitish6759
+
+---
+
+## 📜 License
+
+This project was developed for the **Web Team Selection Process**.
